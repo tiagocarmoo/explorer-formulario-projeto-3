@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #e5e5e5;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 370px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #121214;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 319px;
+    margin-top: 75px;
+    margin-bottom: 40px;
+}
+
+header {
+    width: 736px;
+    margin: auto;
+}
+
+header h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 42px;
+    color: white;
+}
+
+header p {
+    font-size: 1rem;
+    line-height: 26px;
+    color: #18c9ff;
+}
+
+form {
+    width: 736px;
+    margin: 0 auto;
+    min-height: 200px;
+    background: #fcfcfc;
+    border-radius: 8px 8px 0px 0px;
+    padding: 60px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 36px;
+    width: 100%;
+    border-bottom: 1px solid #e6e6f0;
+    padding-bottom: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+}
+
+.input-wrapper label,
+.checkbox-wrapper {
+    font-size: 0.875rem;
+    line-height: 24px;
+    color: #434958;
+    margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+    margin-left: 12px;
+    color: #c1bccc;
+}
+
+.input-wrapper input,
+select {
+    background: #fafafc;
+    border: 1px solid #e6e6f0;
+    border-radius: 8px;
+    padding: 0 24px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-wrapper textarea {
+    background: #fafafc;
+    border: 1px solid #e6e6f0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    height: 170px;
+    padding: 10px;
+}
+
+.input-wrapper select {
+    appearance: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.input-wrapper select option {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.fieldset-wrapper {
+    margin-top: 30px;
+}
+
+.checkbox-wrapper label {
+    margin: 0;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+}
+
+.col-3 {
+    display: flex;
+    gap: 20px;
+}
+
+.col-3 div:first-child {
+    width: 100%;
+}
+
+footer {
+    width: 736px;
+    margin: 0 auto;
+
+    border-radius: 0px 0px 8px 8px;
+    background: #f0f0f4;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 64px;
+    margin-bottom: 100px;
+    border-top: 1px solid #d6d6d6;
+}
+
+footer .button {
+    height: 56px;
+    border-radius: 8px;
+    background: #04D361;
+    color: white;
+    font-weight: 600;
+    line-height: 26px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer .button:hover {
+    background: #01a249;
+}
+
+input:invalid {
+    border: 1px solid #FF1010;
+}
